@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.Arrays;
 
 
 public class Inbuiltsort {
@@ -9,7 +9,7 @@ public class Inbuiltsort {
 }
     public static void main(String args[]){
         Integer arr[]={4,2,7,10,0,12};
-        Arrays.sort(arr,0,3,Collections.reverseOrder());
+        Arrays.sort(arr);
         print(arr);
 
     }
