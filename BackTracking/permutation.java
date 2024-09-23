@@ -8,8 +8,8 @@ public class permutation {
         }
         for(int i=0;i<str.length();i++){
             char ch=str.charAt(i);
-            String newstr=str.substring(0, i)+str.substring(i+1,str.length());
-            permutation(newstr, ans+ch);
+          
+            permutation(str.substring(0, i)+str.substring(i+1,str.length()), ans+ch);
         }
     }
     public static void main(String[] args) {

@@ -1,6 +1,6 @@
 public class mergeSort {
     public static void mergeSort(int arr[],int si,int ei){
-        if(si==ei){
+        if(si>=ei ){
             return;
         }
         
@@ -61,8 +61,9 @@ public class mergeSort {
     }
     public static void main(String[] args) {
         int arr[]={4,2,15,7};
+        int arr1[]={};
         mergeSort(arr,0,arr.length-1);
-        // print(arr);
+        print(arr);
         
     }
 }

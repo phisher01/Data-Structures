@@ -3,22 +3,23 @@
 public class subsets {
     public static void findSubset(String str,StringBuilder sb,int i){
         if(i==str.length()){
-            if((sb.toString()).length()==0){
-                System.out.println("Null");
-                // sb.deleteCharAt(sb.length-1);
-            }else{
+            // if((sb.toString()).length()==0){
+            //     System.out.println("Null");
+            //     // sb.deleteCharAt(sb.length-1);
+            // }else{
 
                 System.out.println(sb.toString());
-                sb.deleteCharAt(sb.length()-1);
-            }
+            // }
             return;
         }
+        sb.append(str.charAt(i));
+        findSubset(str, sb ,i+1);  ///yes choice
+        sb.deleteCharAt(sb.length()-1);
         
-        findSubset(str, sb.append(str.charAt(i)), i+1);  ///yes choice
-        
-        
+        // sb.append("_");
         findSubset(str, sb, i+1);        //no choice
-
+        // sb.deleteCharAt(sb.length()-1);
+        
     }
 
 
