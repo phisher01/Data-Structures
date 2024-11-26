@@ -446,6 +446,7 @@ public void makeitcircle(){
         ll2.addLast(4);
         ll2.addFirst(7);
         ll2.addFirst(3);
+        
         // ll2.tail.next=head.next;
         // 1->2->3->2
         // System.out.println(ll2.hasCycle());
